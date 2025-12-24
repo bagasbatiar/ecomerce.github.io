@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Checkout - NiceShop Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/drift-zoom/drift-basic.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: NiceShop
+  * Template URL: https://bootstrapmade.com/niceshop-bootstrap-ecommerce-template/
+  * Updated: Aug 26 2025 with Bootstrap v5.3.7
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="checkout-page">
+
+ <header id="header" class="header sticky-top">
+    <!-- Top Bar -->
+
+
+    <!-- Main Header -->
+    <div class="main-header">
+      <div class="container-fluid container-xl">
+        <div class="d-flex py-3 align-items-center justify-content-between">
+
+          <!-- Logo -->
+          <a href="index.html" class="logo d-flex align-items-center">
+            <!-- Uncomment the line below if you also wish to use an image logo -->
+            <!-- <img src="assets/img/logo.webp" alt=""> -->
+            <h1 class="sitename">NiceShop</h1>
+          </a>
+         
+
+          <!-- Actions -->
+          <div class="header-actions d-flex align-items-center justify-content-end">
+
+            <!-- Mobile Navigation Toggle -->
+            <i class="mobile-nav-toggle d-xl-none bi bi-list me-0"></i>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="header-nav">
+      <div class="container-fluid container-xl position-relative">
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="category.html">Produk Kami</a></li>
+            <li class="dropdown"><a href="#"><span>Informasi</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="tos.html">Syarat dan Ketentuan</a></li>
+              </ul>
+            </li>
+          
+
+            <li><a href="https://wa.me/62895639068080" target="_blank">Contact</a></li>
+
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Mobile Search Form -->
+    <div class="collapse" id="mobileSearch">
+      <div class="container">
+        <form class="search-form">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search for products">
+            <button class="btn" type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </header>
+
+  <main class="main">
+    <div class="page-title light-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Checkout</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Checkout</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <section id="checkout" class="checkout section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="checkout-container">
+              <form class="checkout-form">
+
+                <div class="checkout-section" id="customer-info">
+                  <div class="section-header">
+                    <div class="section-number">1</div>
+                    <h3>Informasi Pelanggan</h3>
+                  </div>
+                  <div class="section-content">
+                    <div class="row">
+                      <div class="col-md-6 mb-3">
+                        <label class="form-label">Nama Depan</label>
+                        <input type="text" class="form-control" placeholder="Nama Depan Anda" required>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <label class="form-label">Nama Belakang</label>
+                        <input type="text" class="form-control" placeholder="Nama Belakang Anda" required>
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Alamat Email</label>
+                      <input type="email" class="form-control" placeholder="Email Anda" required>
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Nomor Telepon (WhatsApp)</label>
+                      <input type="tel" class="form-control" placeholder="Nomor Telepon Anda" required>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="checkout-section" id="shipping-address">
+                  <div class="section-header">
+                    <div class="section-number">2</div>
+                    <h3>Alamat Pengiriman</h3>
+                  </div>
+                  <div class="section-content">
+                    <div class="row">
+                      <div class="col-md-6 mb-3">
+                        <label class="form-label">Provinsi</label>
+                        <select class="form-select" id="select-provinsi" required>
+                          <option value="" selected disabled>Pilih Provinsi</option>
+                          <option value="Jawa Barat">Jawa Barat</option>
+                          <option value="DKI Jakarta">DKI Jakarta</option>
+                          <option value="Jawa Tengah">Jawa Tengah</option>
+                        </select>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <label class="form-label">Kota/Kabupaten</label>
+                        <select class="form-select" id="select-kota" required disabled>
+                          <option value="" selected disabled>Pilih Kota</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Alamat Lengkap</label>
+                      <textarea class="form-control" id="alamat-lengkap" rows="3"
+                        placeholder="Nama Jalan, No. Rumah, RT/RW, Kecamatan" required></textarea>
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Kode POS</label>
+                      <input type="text" class="form-control" id="zip-code" placeholder="Kode Pos" required>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="checkout-section" id="payment-method">
+                  <div class="section-header">
+                    <div class="section-number">3</div>
+                    <h3>Metode Pembayaran</h3>
+                  </div>
+                  <div class="section-content">
+                    <div class="payment-options d-flex gap-3 mb-4">
+                      <div class="payment-option border p-3 rounded text-center flex-fill active" data-bank="BCA"
+                        style="cursor: pointer;">
+                        <i class="bi bi-bank fs-4"></i><br>Transfer Bank BCA
+                      </div>
+                      <div class="payment-option border p-3 rounded text-center flex-fill" data-bank="Mandiri"
+                        style="cursor: pointer;">
+                        <i class="bi bi-bank2 fs-4"></i><br>Transfer Bank Mandiri
+                      </div>
+                    </div>
+
+                    <div id="bank-info" class="p-3 border rounded bg-light mb-3">
+                      <p class="mb-1 fw-bold">Informasi Rekening:</p>
+                      <div id="bank-detail">
+                        <strong>Bank BCA</strong><br>
+                        No. Rekening: 1234567890<br>
+                        A/N: NiceShop Indonesia
+                      </div>
+                    </div>
+
+                    <p class="text-muted small">Silakan selesaikan pesanan Anda. Detail pembayaran dan konfirmasi akan
+                      dilanjutkan melalui WhatsApp.</p>
+                  </div>
+                </div>
+
+                <div class="checkout-section" id="order-review">
+                  <div class="section-header">
+                    <div class="section-number">4</div>
+                    <h3>Tinjau & Buat Pesanan</h3>
+                  </div>
+                  <div class="section-content">
+                    <div class="form-check mb-4">
+                      <input class="form-check-input" type="checkbox" required id="terms">
+                      <label class="form-check-label" for="terms">
+                        Saya setuju dengan Syarat dan Ketentuan serta Kebijakan Privasi
+                      </label>
+                    </div>
+                    <button type="submit"
+                      class="btn btn-dark w-100 py-3 d-flex justify-content-between align-items-center">
+                      <span>Buat Pesanan</span>
+                      <span class="btn-price">Rp 0</span>
+                    </button>
+                  </div>
+                </div>
+
+              </form>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="order-summary-card p-4 border rounded bg-white sticky-top" style="top: 100px;">
+              <h3 class="mb-4">Ringkasan Pesanan</h3>
+              <div class="d-flex align-items-center mb-3">
+                <img src="" id="checkout-img" class="img-fluid rounded me-3"
+                  style="width: 80px; height: 80px; object-fit: cover;">
+                <div>
+                  <h6 class="mb-0" id="checkout-product-name">Memuat...</h6>
+                  <small class="text-muted" id="checkout-product-color">Warna: -</small>
+                </div>
+              </div>
+              <hr>
+              <div class="d-flex justify-content-between mb-2">
+                <span>Subtotal</span>
+                <span class="checkout-total-price">Rp 0</span>
+              </div>
+              <div class="d-flex justify-content-between mb-2">
+                <span>Ongkos Kirim</span>
+                <span class="text-success">Gratis</span>
+              </div>
+              <hr>
+              <div class="d-flex justify-content-between fw-bold fs-5">
+                <span>Total</span>
+                <span class="checkout-total-price">Rp 0</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+    <div class="footer-main">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-widget footer-about">
+              <a href="index.html" class="logo">
+                <span class="sitename">NiceShop</span>
+              </a>
+              <p>NiceShop menyediakan koleksi fashion terbaik mulai dari atasan, celana, hingga aksesoris berkualitas.
+                Kami berkomitmen memberikan pengalaman belanja yang mudah, cepat, dan terpercaya langsung ke WhatsApp
+                Anda.</p>
+              <div class="social-links mt-4">
+                <h5>Media Sosial Kami</h5>
+                <div class="social-icons">
+                  <a href="https://wa.me/62895639068080" target="_blank"><i class="bi bi-facebook"></i></a>
+                  <a href="https://wa.me/62895639068080" target="_blank"><i class="bi bi-instagram"></i></a>
+                  <a href="https://wa.me/62895639068080" target="_blank"><i class="bi bi-twitter-x"></i></a>
+                  <a href="https://wa.me/62895639068080" target="_blank"><i class="bi bi-tiktok"></i></a>
+                  <a href="https://wa.me/62895639068080" target="_blank"><i class="bi bi-pinterest"></i></a>
+                  <a href="https://wa.me/62895639068080" target="_blank"><i class="bi bi-youtube"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 col-sm-6">
+            <div class="footer-widget">
+              <h4>Link Terkait</h4>
+              <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="category.html">Produk kami</a></li>
+
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 col-sm-6">
+            <div class="footer-widget">
+              <h4>Network</h4>
+              <ul>
+                <li><a href="https://www.artikdia.web.id/" target="_blank">Artikdia Web ID</a></li>
+                <li><a href="https://www.vendoroutbound.com/" target="_blank">Vendor Outbound</a></li>
+                <li><a href="https://www.nglencer.id/" target="_blank">Ngelencer ID</a></li>
+                <li><a href="https://www.otomagz.id/" target="_blank">Otomagz ID</a></li>
+
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-widget">
+              <h4>Contact </h4>
+              <div class="footer-contact">
+                <div class="contact-item">
+                  <i class="bi bi-geo-alt"></i>
+                  <span>Jl.Malang, Blimbin</span>
+                </div>
+                <div class="contact-item">
+                  <i class="bi bi-telephone"></i>
+                  <span>+62 859 6390 68080</span>
+                </div>
+                <div class="contact-item">
+                  <i class="bi bi-envelope"></i>
+                  <span>NiceShop@gmail.com</span>
+                </div>
+
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row gy-3 align-items-center">
+          <div class="col-lg-6 col-md-12">
+            <div class="copyright">
+              <p>© <span>Copyright</span> <strong class="sitename">NiceShop</strong>. All Rights Reserved.</p>
+            </div>
+            <div class="credits mt-1">
+              <!-- All the links in the footer should remain intact. -->
+              <!-- You can delete the links only if you've purchased the pro version. -->
+              <!-- Licensing information: https://bootstrapmade.com/license/ -->
+              <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/drift-zoom/Drift.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/category.js"></script>
+  <script src="assets/js/checkout.js"></script>
+
+</body>
+
+</html>
